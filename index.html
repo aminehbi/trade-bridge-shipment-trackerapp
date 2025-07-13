@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Shipment Tracker | Trade Bridge Connect™</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: url('world-map-background-blur.jpg') no-repeat center center fixed; background-size: cover;">
+  <div class="container" style="background-color: rgba(255, 255, 255, 0.85); padding: 20px; border-radius: 12px;">
+    <h1>📦 Trade Bridge Connect – Live Shipment Tracker</h1>
+    <form id="trackForm">
+      <label for="type">Track by:</label>
+      <select id="trackType">
+        <option value="container">Container</option>
+        <option value="bl">Bill of Lading</option>
+        <option value="booking">Booking No</option>
+      </select>
+      <input type="text" id="trackInput" placeholder="Enter your number..." required />
+      <button type="submit">Track Now</button>
+    </form>
+    <div id="resultBox"></div>
+    <iframe id="mapFrame" width="100%" height="400" style="display:none; border:none;"></iframe>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
